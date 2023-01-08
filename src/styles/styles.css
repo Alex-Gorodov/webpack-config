@@ -1,0 +1,55 @@
+@import "./fonts.css";
+
+:root {
+  --margin: 2rem;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  font-family: "Coolvetica", sans-serif;
+}
+
+hr {
+  width: 100%;
+  color: #000000;
+  border-style: inset; 
+  border-width: 1px; 
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: var(--margin);
+}
+
+.title {
+  margin-bottom: var(--margin);
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin: var(--margin) auto;
+  
+  background-image: url("../img/webpack-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.date {
+  text-align: center;
+  margin-top: auto;
+}

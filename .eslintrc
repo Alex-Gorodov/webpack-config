@@ -1,0 +1,25 @@
+{
+  "env": {
+      "browser": true,
+      "es8": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+  ],
+  "overrides": [
+  ],
+  "react/no-unknown-property": ["warn", { "ignore": ["css"] }],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react",
+      "@typescript-eslint"
+  ],
+  "rules": {
+  }
+}
