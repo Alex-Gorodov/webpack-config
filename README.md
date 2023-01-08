@@ -2,6 +2,7 @@
 
 Automating processes of compiling style preprocessors, compile ReactJS
 and TypeScript to JS, compile JS to the version supported by your browser.
+Minimizing the CSS, HTML and JS files.
 
 Add this folder to your project and change content in 'src' folder to your own. 
 Then run ```npm i``` for installing a package and any packages that it depends on.
