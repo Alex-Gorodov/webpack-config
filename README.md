@@ -13,7 +13,7 @@ Then run ```npm i``` for installing a package and any packages that it depends o
 - [React](https://reactjs.org/) (18.2)
 - [babel](https://babeljs.io/)
 - [ESlint](https://eslint.org/)
-- CSS, [LESS](https://lesscss.org/), [Sass](https://sass-lang.com/)
+- CSS, [Less](https://lesscss.org/), [SCSS](https://sass-lang.com/)
 - Terser (JS-minimizer)
 - styles minimizer
 - HMTL-loader
