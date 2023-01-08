@@ -2,12 +2,12 @@
 
 ## What is inside:
 
-- TypeScript (4.9.4)
-- React (18.2)
-- babel
+- [TypeScript](https://www.typescriptlang.org/) (4.9.4)
+- [React](https://reactjs.org/) (18.2)
+- [babel](https://babeljs.io/)
+- [ESlint](https://eslint.org/)
+- CSS, [LESS](https://lesscss.org/), [Sass](https://sass-lang.com/)
 - Terser (JS-minimizer)
-- ESlint
-- CSS, LESS, Sass
 - styles minimizer
 - HMTL-loader
 - file-loader
