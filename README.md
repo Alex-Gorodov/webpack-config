@@ -1,6 +1,6 @@
-Basic WebPack configuration.
+# Basic WebPack configuration.
 
-What is inside:
+## What is inside:
 
 - TypeScript (4.9.4)
 - React (18.2)
@@ -13,7 +13,7 @@ What is inside:
 - file-loader
 - dev-server
 
-Scripts:
+## Scripts:
 
 - dev - compile and load files and put it into 'dist' folder - in dev-mode
 - build - make the same thing like 'dev', but in prod-mode
@@ -21,7 +21,7 @@ Scripts:
 - start - starting dev-server at port 8800
 - stats - starting webpack-bundle-analyzer at port 8888 and create stats.json file
 
-TODO:
+## TODO:
 
 - PostCSS
 - Graphic's optimization, webp-format
