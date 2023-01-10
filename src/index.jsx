@@ -1,14 +1,15 @@
 import React from 'react';
-import {createRoot} from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import './babel';
 
-// By using of the Resolve block in config - we do not indicate the relative path to the folder and the file extension
+// By using of the Resolve block in config - we do not indicate
+// the relative path to the folder and the file extension
 import '@styles/styles'; // === import '@/styles/styles' === import '.src/styles/styles.css'
 import '@styles/less';
 import '@styles/scss';
 
 const container = document.getElementById('app');
-const root = createRoot(container)
+const root = createRoot(container);
 
 const App = () => (
   <div className="container">
