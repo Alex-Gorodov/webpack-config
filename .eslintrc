@@ -1,16 +1,15 @@
 {
   "env": {
-      "browser": true,
-      "es8": true
+      "browser": true
   },
   "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "plugin:@typescript-eslint/recommended"
+    "airbnb/base",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "overrides": [
   ],
-  "react/no-unknown-property": ["warn", { "ignore": ["css"] }],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
       "ecmaVersion": "latest",
@@ -21,5 +20,6 @@
       "@typescript-eslint"
   ],
   "rules": {
+    "@typescript-eslint/no-var-requires": 0
   }
 }
