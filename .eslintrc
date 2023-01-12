@@ -1,48 +1,51 @@
 {
   "env": {
-      "browser": true
+    "browser": true,
+    "es6": true,
+    "node": true
   },
   "extends": [
     "airbnb/base",
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
+    ],
+  "rules": {
+    "no-console": "off",
+    "no-plusplus": "off",
+    "no-tabs": "off",
+    "no-trailing-spaces": "off",
+    "quotes": "off",
+    "prefer-destructuring": "off",
+    "no-unused-vars": "warn",
+    "indent": ["off", "tab"],
+    "max-len": ["error", 100, { "ignoreUrls": true }],
+    "react/function-component-definition": "off",
+    "react/self-closing-comp": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier"
   ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "settings": {
-    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"],
-      "react": [".jsx"]
-    },
-    "import/resolver": "webpack",
     "react": {
       "version": "detect"
     }
-  },
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "ecmaVersion": "latest",
-      "sourceType": "module"
-  },
-  "plugins": [
-      "react",
-      "@typescript-eslint"
-  ],
-  "rules": {
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "import/extensions": [
-      "error",
-      "ignorePackages" ,
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ]
- }
+  }
 }

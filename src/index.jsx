@@ -10,7 +10,6 @@ import '@styles/scss';
 
 const container = document.getElementById('app');
 const root = createRoot(container);
-console.log('asda');
 
 const App = () => (
   <div className="container">
