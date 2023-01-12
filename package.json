@@ -12,8 +12,8 @@
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
     "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix"
+    "lint": "eslint ./src --ext .jsx,.js,.ts",
+    "lint:fix": "eslint ./src --fix --ext .jsx,.js,.ts"
   },
   "browserslist": "> 0.25%, not dead",
   "keywords": [
