@@ -1,6 +1,5 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import './babel';
 
 // By using of the Resolve block in config - we do not indicate
 // the relative path to the folder and the file extension
