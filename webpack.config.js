@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const BundleAnalizerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// const { PostCssLoader } = require('postcss-loader');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -34,7 +35,18 @@ const cssLoaders = (extra) => {
       options: {},
     },
     'css-loader',
-    'postcss-loader',
+    {
+      loader: "postcss-loader",
+      options: {
+        postcssOptions: {
+          plugins: [
+            [
+              "postcss-preset-env",
+            ],
+          ],
+        },
+      },
+    },
   ];
 
   if (extra) {
@@ -131,11 +143,11 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        use: cssLoaders('less-loader'),
+        use: cssLoaders('less-loader', 'postcss-less'),
       },
       {
         test: /\.(s[ac]ss)$/,
-        use: cssLoaders('sass-loader'),
+        use: cssLoaders('sass-loader', 'postcss-scss'),
       },
       {
         test: /\.(png|jpg|svg|webp)$/,
