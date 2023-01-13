@@ -21,8 +21,8 @@ body {
 hr {
   width: 100%;
   color: #000000;
-  border-style: inset; 
-  border-width: 1px; 
+  border-style: inset;
+  border-width: 1px;
   margin: 0 auto;
 }
 
@@ -42,7 +42,7 @@ hr {
   width: 200px;
   height: 200px;
   margin: var(--margin) auto;
-  
+
   background-image: url("../img/webpack-logo.png");
   background-size: cover;
   background-repeat: no-repeat;

@@ -34,6 +34,7 @@ const cssLoaders = (extra) => {
       options: {},
     },
     'css-loader',
+    'postcss-loader',
   ];
 
   if (extra) {

@@ -13,7 +13,7 @@ Then run ```npm i``` for installing a package and any packages that it depends o
 - [React](https://reactjs.org/) (18.2)
 - [babel](https://babeljs.io/)
 - [ESlint](https://eslint.org/)
-- CSS, [Less](https://lesscss.org/), [SCSS](https://sass-lang.com/)
+- [CSS](w3.org/TR/CSS/), [Less](https://lesscss.org/), [SCSS](https://sass-lang.com/), [PostCSS](postcss.org)
 - Terser (JS-minimizer)
 - styles minimizer
 - HMTL-loader
@@ -32,6 +32,5 @@ Then run ```npm i``` for installing a package and any packages that it depends o
 
 ## TODO:
 
-- PostCSS
 - Graphic's optimization, webp-format
 - SVG sprites
