@@ -11,14 +11,13 @@ Then run ```npm i``` for installing a package and any packages that it depends o
 
 - [TypeScript](https://www.typescriptlang.org/) (4.9.4)
 - [React](https://reactjs.org/) (18.2)
-- [babel](https://babeljs.io/)
+- [Babel](https://babeljs.io/)
+- [CSS](https://w3.org/TR/CSS/), [Less](https://lesscss.org/), [SCSS](https://sass-lang.com/), [PostCSS](https://postcss.org)
 - [ESlint](https://eslint.org/)
-- [CSS](w3.org/TR/CSS/), [Less](https://lesscss.org/), [SCSS](https://sass-lang.com/), [PostCSS](postcss.org)
-- Terser (JS-minimizer)
-- styles minimizer
+- Minimizers
 - HMTL-loader
-- file-loader
-- dev-server
+- File-loader
+- Dev-server
 
 ## Scripts:
 
